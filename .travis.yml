@@ -1,10 +1,8 @@
 language: python
-
-python:
-  - "3.8"
-
 install:
   - pip install polars
-
 script:
   - python main.py input.csv output.csv 0
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
