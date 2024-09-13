@@ -1,4 +1,9 @@
+os: linux
 language: python
+sudo: false
+python:
+  - "3.8"
+
 script:
   - python main.py
 
